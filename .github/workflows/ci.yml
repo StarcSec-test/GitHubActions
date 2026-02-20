@@ -1,14 +1,14 @@
-# name: Simple CI Test
+name: Simple CI Test
 
-# on:
-#   push:
-#     branches:
-#       - main  # Runs only when pushing to the 'main' branch
+on:
+  push:
+    branches:
+      - main  # Runs only when pushing to the 'main' branch
 
-# jobs:
-#   test:
-#     runs-on: ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Print Hello World
-#         run: echo "GitHub Actions is working!"
+    steps:
+      - name: Print Hello World
+        run: echo "GitHub Actions is working!"
