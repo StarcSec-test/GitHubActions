@@ -24,6 +24,7 @@ public class HelloVulnServlet extends HttpServlet {
             throw new ServletException(e);
         }
     }
+    
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
