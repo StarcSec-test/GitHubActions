@@ -22,6 +22,7 @@ public class HelloVulnServlet extends HttpServlet {
             stmt.execute("INSERT INTO users (username, bio) VALUES ('alice', 'I love cats'), ('bob', 'I love coffee');");
         } catch (SQLException e) {
             throw new ServletException(e);
+            
         }
     }
     
