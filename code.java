@@ -50,6 +50,7 @@ public class HelloVulnServlet extends HttpServlet {
                 // Vulnerable: concatenating user input into SQL
                 String sql = "SELECT username, bio FROM users WHERE username LIKE '%" + query + "%'";
                 ResultSet rs = stmt.executeQuery(sql);
+                
 
                 out.println("<ul>");
                 while (rs.next()) {
