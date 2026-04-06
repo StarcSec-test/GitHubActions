@@ -17,6 +17,7 @@ public class HelloVulnServlet extends HttpServlet {
         try {
             // Initialize in-memory H2 database
             conn = DriverManager.getConnection("jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1", "sidddd", "");
+
             
             
             Statement stmt = conn.createStatement();
